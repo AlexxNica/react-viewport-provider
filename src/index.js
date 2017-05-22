@@ -35,7 +35,7 @@ if (isBrowserEnvironment) {
   updateViewportSize();
 }
 
-export default class ViewportProvider extends React.Compoment {
+export default class ViewportProvider extends React.Component {
   state = {
     viewportWidth: width,
     viewportHeight: height,
