@@ -2,6 +2,10 @@
 
 React Viewport Provider adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.6] 2017-05-22
+
+- Errant `console`
+
 ## [1.0.5] 2017-05-22
 
 - Make `build` prepublish step.

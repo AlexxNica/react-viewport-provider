@@ -63,7 +63,6 @@ export default class ViewportProvider extends React.Component {
   }
 
   componentWillUnmount() {
-    console.log('will un mount')
     removeViewportListeners(this.onViewportChange, this.onResizeStart);
   }
 
