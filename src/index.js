@@ -1,5 +1,21 @@
 import React from 'react';
-import debounce from './debounce';
+// import debounce from './debounce';
+// https://davidwalsh.name/javascript-debounce-function
+ function debounce(func, wait = 100, isImmediate = false) {
+  let timeout = null;
+
+  return (...args) => {
+    const later = () => {
+      timeout = null;
+      if (isImmediate !== true) func(...args);
+    };
+
+    const callNow = (isImmediate && !timeout);
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func(...args);
+  };
+}
 
 let width = null;
 let height = null;
@@ -47,7 +63,8 @@ export default class ViewportProvider extends React.Component {
   }
 
   componentWillUnmount() {
-    removeViewportListeners(this.onnViewportChange, this.onResizeStart);
+    console.log('will un mount')
+    removeViewportListeners(this.onViewportChange, this.onResizeStart);
   }
 
   onResizeStart = () => this.setState({ isResizing: true });
