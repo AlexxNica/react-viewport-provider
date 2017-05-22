@@ -9,7 +9,7 @@
 
 `ViewportProvider` uses the children-as-function pattern:
 
-```
+```javascript
 import ViewportProvider from 'react-viewport-provider';
 
 export default () => (
