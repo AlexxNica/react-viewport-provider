@@ -1,6 +1,6 @@
 {
   "name": "react-viewport-provider",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Provide viewport dimensions to children components.",
   "author": "Matt Perry",
   "license": "MIT",
