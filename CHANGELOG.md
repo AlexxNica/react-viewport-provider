@@ -2,6 +2,10 @@
 
 React Viewport Provider adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.2] 2017-05-22
+
+- Updating README.md
+
 ## [1.0.1] 2017-05-22
 
 - Fixing entry file pointer.

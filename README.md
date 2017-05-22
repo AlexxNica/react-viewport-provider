@@ -28,12 +28,3 @@ export default () => (
   Viewport dimensions, measured in pixels. When running server-side (where no viewport exists), both values are `null`.
 - `isViewportResizing`
   `true` when a user begins resizing the viewport, `false` when they've stopped resizing for longer than the `debounceDuration` (default 200ms).
-
-### Change default `debounceDuration`
-
-You can change the duration `ViewportProvider` waits after a user has resized the browser before remeasuring the viewport with `setViewportDebounceDuration`:
-
-```
-import { setViewportDebounceDuration } from 'react-viewport-provider';
-setViewportDebounceDuration(500):
-```
